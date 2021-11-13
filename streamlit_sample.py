@@ -52,7 +52,7 @@ def get_quote_tableData(ticker):
     
     return pdf
 
-def getuserStockInput(ticker):#{
+def getuserStockInput(ticker):
     try:
         stockQuote_df = get_quote_tableData(ticker) 
         st.markdown("# Company's Financial Dashboard")
