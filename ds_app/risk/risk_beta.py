@@ -5,7 +5,7 @@
 import numpy as np
 
 def est_risk():
-	print("Risk is high.")
+	return "High"
 
 if __name__ == "__main__":
 	est_risk()
