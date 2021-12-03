@@ -2,8 +2,6 @@
 #
 # Developed for the Code With Me Distributed Stonks Project.
 #
-import sys
-import re
 import yahoo_fin.stock_info as si
 
 class CompanyInfo:
