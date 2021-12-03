@@ -1,7 +1,7 @@
 # Distributed Stoncks App
 
-This is stock analysis app made with streamlit.
-You enter the ticker of the stock and the application determines whether the stock is undervalued or overvalued using various risk metrics.
+This is a stock analysis app made with streamlit.
+Enter the ticker of the stock and this application determines whether the stock is undervalued, overvalued or at a fair value using various risk metrics.
 
 ## Requirements
 
