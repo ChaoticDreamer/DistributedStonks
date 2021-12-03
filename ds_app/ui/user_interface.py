@@ -8,12 +8,16 @@ import streamlit as st
 import pandas as pd
 
 def get_ticker_input():
+   
    ticker_input = st.sidebar.text_input(label="Please Enter Company's Ticker:",value="")
+
    if(st.sidebar.button("Submit") and ticker_input!=""):
       check_and_evaluate_ticker_input(ticker_input)
       
 def check_and_evaluate_ticker_input(ticker_input):	
+   
    ticker=ticker_input.title().lower()
+
    if re.search(r"\d",ticker) or re.search(r"\W",ticker):
       st.error("Ticker entered is invalid. Please Enter Correctly the Company's Ticker")   
    else:
@@ -24,8 +28,7 @@ def check_and_evaluate_ticker_input(ticker_input):
       	columns=('Ticker','Current Value', 'Fair Value', 'Stock Valuation'))
 
       styler = stock_pdf.style.hide_index().applymap(lambda x:format_stockAssessment, subset=['Stock Valuation'])
-      st.markdown("""### **Company's Stock Evaluation using Fair Value Estimator**""")
-     
+      st.markdown("""### **Company's Stock Evaluation using Fair Value Estimator**""")    
       st.write(styler.to_html(), unsafe_allow_html=True)
 
 def format_text_color(stockAssessment):
