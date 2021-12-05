@@ -14,8 +14,9 @@ cd the directory for your project
 ```
 git clone git@github.com:ChaoticDreamer/DistributedStonks.git
 ```
+See the [Distributed Stonks Wiki](https://github.com/ChaoticDreamer/DistributedStonks/wiki/gitsetup) for a short tutorial on the Distributed Stonks workflow with Git.
 
-Some basic Git commands are:
+Here are some basic Git commands:
 
 ```
 git status
