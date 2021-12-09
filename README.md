@@ -1,4 +1,4 @@
-# Distributed Stoncks App
+# Distributed Stonks App
 
 This is a stock analysis app made with streamlit.
 Enter the ticker of the stock and this application determines whether the stock is undervalued, overvalued or at a fair value using various risk metrics.
