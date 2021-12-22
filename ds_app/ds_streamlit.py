@@ -2,12 +2,12 @@
 #
 # Developed for the Code With Me Distributed Stonks Project.
 #
-import pathlib
-import sys
+#import pathlib
+#import sys
 
 # This adds the path of the …/src folder
 # to the PYTHONPATH variable
-sys.path.append(str(pathlib.Path().absolute()).split("/ds_app")[0] + "/ds_app")
+#sys.path.append(str(pathlib.Path().absolute()).split("/ds_app")[0] + "/ds_app")
 
 import streamlit as st
 import ui.user_interface as ui
@@ -28,7 +28,7 @@ HTML = """<!DOCTYPE html>
 </head>
 <h1>
     <i> 
-        <font size="9" face ="verdana" color ="lightblue" margin:5px>Distributed Stoncks </br> Risk Evaluator</font>
+        <font size="9" face ="verdana" color ="lightblue" margin:5px>Distributed Stonks </br> Risk Evaluator</font>
     </i>  
 </h1> 
 <img src="https://res.cloudinary.com/emerline/image/upload/v1605796379/zj4tre4h0yf3eefwg8u7.jpg" alt="res.cloudinary.com">     
