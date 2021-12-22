@@ -27,9 +27,10 @@ def check_and_evaluate_ticker_input(ticker_input):
       stock_pdf = pd.DataFrame([(ticker,currentValue,fairValue,stockAssessment)],
       	columns=('Ticker','Current Value', 'Fair Value', 'Stock Valuation'))
 
-      styler = stock_pdf.style.hide_index().applymap(lambda x:format_stockAssessment, subset=['Stock Valuation'])
+      styler = stock_pdf.style.applymap(lambda x:format_stockAssessment, subset=['Stock Valuation'])
+      st.markdown("***")
       st.markdown("""### **Company's Stock Evaluation using Fair Value Estimator**""")    
-      st.write(styler.to_html(), unsafe_allow_html=True)
+      st.write(styler, unsafe_allow_html=True)
 
 def format_text_color(stockAssessment):
 
