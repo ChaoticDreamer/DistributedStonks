@@ -7,6 +7,8 @@ Enter the ticker of the stock and this application determines whether the stock 
 
 Python 3.7 or higher
 
+yahoo-fin API [(installation instructions here)](https://pypi.org/project/yahoo-fin/)
+
 ## Installation
 
 cd the directory for your project
